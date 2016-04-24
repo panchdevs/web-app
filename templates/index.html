@@ -1,0 +1,27 @@
+<html>
+
+<head>
+</head>
+
+<body class = "body">
+
+	<body>
+	<h1 align  = "center"> {{ title }} </h1>
+	
+	<!--<form align = "center" action="demo_post_enctype.asp" method="post" enctype="multipart/form-data">
+			Directory <input type="file" name="directory">
+			<input type="submit" value="Upload">
+	</form>
+	-->
+	<form align = "center" id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+		
+		<input id="file-picker" type="file" name="files"  multiple>
+		<div id="msg"></div>
+		<input type="submit" value="Upload!" id="upload-button">
+	
+	</form>
+    </body>
+<body>
+
+</html>
